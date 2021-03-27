@@ -1,13 +1,20 @@
+package unrecursion;
+
 public class TreeNode {
-    public int val;
+    public char val;
     public TreeNode left;
     public TreeNode right;
-    public TreeNode(int val){
+
+    public TreeNode() {
+    }
+
+    public TreeNode(char val) {
         this.val = val;
     }
 
-    @Override
-    public String toString() {
-        return String.format("TreeNode{%s}",val);
+    public TreeNode(char val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
     }
 }

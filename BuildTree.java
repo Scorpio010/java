@@ -1,3 +1,5 @@
+package unrecursion;
+
 public class BuildTree {
     public static TreeNode buildTree1() {
         // 让大家练习前中后序的树
@@ -19,14 +21,15 @@ public class BuildTree {
         a.left = b; a.right = c;
         b.left = d; b.right = e;
         c.left = f; c.right = g;
-        d.left = null; d.right = h;
-        e.left = null; e.right = null;
+        d.right = h;
         f.left = i; f.right = j;
-        g.left = null; g.right = k;
+        g.right = k;
         h.right = l;
         j.left = m;
         m.left = n;
 
         return a;
     }
+
+
 }
